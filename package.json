@@ -1,0 +1,17 @@
+{
+  "name": "aula05---2",
+  "version": "1.0.0",
+  "description": "Projeto inicial de back-end com NodeJS. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "back-end",
+    "senai",
+    "dev"
+  ],
+  "author": "Flavia Mendes",
+  "license": "MIT"
+}
