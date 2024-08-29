@@ -55,6 +55,19 @@ app.get("/", (req, res) => {
 app.get("/doces", (req, res) => {
     return res.status(200).send(guloseimas)
 })
+app.post("/doces", (req, res) => {
+    const {nome,preco} = req.body 
+
+    const novoDoce = {
+        id: guloseimas.length + 1,
+        nome: nome,
+        preco: preco
+    }
+
+    guloseimas.push (novoDoce)
+    return res.status(200).send(guloseimas)
+})
+
 
 app.get("/filmes", (req, res) => {
     return res.status(200).send(filmesMarcantes)
@@ -62,5 +75,5 @@ app.get("/filmes", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log(`😎Server started on https://localhost:${port}`)
+    console.log(`Server started on https://localhost:${port}`)
 })
